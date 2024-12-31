@@ -5,20 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>b-ads</title>
     <link rel="stylesheet" href="styles.css"> <!-- لینک به فایل CSS -->
+
     
-    
-</script>
+    <script>
+        function redirectToLink() {
+            // آرایه‌ای از لینک‌های خارجی
+            var externalLinks = [
+                "https://unrealistic-reaction.com/bF3tV.0RPJ3/pSvqbPmQV/J/ZiDX0H1UOyTlg_xBO/DlAb4YL/TbUt5/OqDAEX4/M-DlkJ",
+                "https://unrealistic-reaction.com/ba3.Vf0TPQ3_pxvCbJm/V/JsZlDa0F1pOzT/g/xvOrDrA-w/LITEUq5GOgDlEs4gM/DeEg",
+                "https://unrealistic-reaction.com/bx3kV.0MPM3Ephvubgm/VLJtZnDR0f1uOQTHgsx/MDDlQd4yLZThUw5/OQDQEUwDNaDlkj"
+                
+            ];
+
+            // انتخاب یک لینک تصادفی از آرایه
+            var randomIndex = Math.floor(Math.random() * externalLinks.length);
+            var selectedLink = externalLinks[randomIndex];
+
+            var returnLink = window.location.href; // لینک فعلی سایت شما
+
+            // هدایت به لینک خارجی
+            window.location.href = selectedLink;
+
+            // بعد از یک ثانیه، کاربر را به سایت خودتان برگردانید
+            setTimeout(function() {
+                window.location.href = returnLink;
+            }, 1000); // 1000 میلی‌ثانیه = 1 ثانیه
+        }
+    </script>
+
 </head>
 <body>
     <h2>that page just for see ad from the B-Coin project...</h2>
     <a href="https://thebest-coin.github.io/TheBest-Coin.io/">home page</a>
 
+    
 
-<script type="text/javascript">
-var infolinks_pid = 3430686;
-var infolinks_wsid = 0;
-</script>
-<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+    <button onclick="redirectToLink()">کلیک کنید</button>
 
+
+    
 </body>
 </html>
