@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>b-ads</title>
     <link rel="stylesheet" href="styles.css"> <!-- لینک به فایل CSS -->
-
+        <style>
+        #myIframe {
+            display: none; /* ابتدا iframe مخفی است */
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+    </style>
        <script>
         function openLinks() {
             const links = [
@@ -30,7 +37,16 @@
 
     <button onclick="openLinks()">کلیک کنید</button>
 
+<button id="openIframeButton">باز کردن iframe</button>
+    <iframe id="myIframe" src=""></iframe>
 
+    <script>
+        document.getElementById('openIframeButton').onclick = function() {
+            var iframe = document.getElementById('myIframe');
+            iframe.src = "https://unrealistic-reaction.com/bO3bVA0.Pm3spdv-bVmLV/JeZqDC0l1cOwTSgcxiO/DuAi4VL/TcUR5/OED/Ep4zMvDekZ"; // لینک سایت مورد نظر
+            iframe.style.display = 'block'; // نمایش iframe
+        };
+    </script>
     
 </body>
 </html>
